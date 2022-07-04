@@ -22,6 +22,12 @@ else
 
 */
 
+/**
+ * 
+ * @param {number} NUM_ONE - first number
+ * @param {number} NUM_TWO - second number
+ * @returns {boolean} - boolean of whether they are equal
+ */
 function isEqual(NUM_ONE, NUM_TWO) {
     if (NUM_ONE == NUM_TWO) {
         return true

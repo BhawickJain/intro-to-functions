@@ -30,6 +30,11 @@ return LONGEST
 
 */
 
+/**
+ * Return longest length word among a list of words
+ * @param {array<string>} WORDS - a list of string words
+ * @returns {string} the longest word in WORDS
+ */
 function longestInList(WORDS) {
 	let LONGEST = WORDS[0]
 	

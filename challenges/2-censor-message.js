@@ -36,6 +36,12 @@ set SCRUBBED_MESSAGE to the string created by joining together every string in S
 return SCRUBBED_MESSAGE
 */
 
+/**
+ * Return a string with censored words replaced with stars from a given list of banned words
+ * @param {string} MESSAGE - raw message string
+ * @param {array<string>} BAN_LIST - list of string words that are banned and to be censored
+ * @returns {string} scrubbed message with censored words removed
+ */
 function censorMessage(MESSAGE, BAN_LIST) {
   let RAW_WORDS = MESSAGE.split(' ')
   let SCRUBBED_WORDS = []

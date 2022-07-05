@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "prettier": "2.7.1"
+  },
+  "scripts": {
+    "lint": "yarn eslint src",
+    "format": "yarn prettier --write challenges/ examples/",
+    "format:check": "yarn prettier --check challenges/ examples/"
+
+  }
+}

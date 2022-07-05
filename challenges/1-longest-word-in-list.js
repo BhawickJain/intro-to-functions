@@ -36,18 +36,16 @@ return LONGEST
  * @returns {string} the longest word in WORDS
  */
 function longestInList(WORDS) {
-	let LONGEST = WORDS[0]
-	
-	for (let WORD of WORDS) {
-		if (WORD.length > LONGEST.length) {
-			LONGEST = WORD
-		}
-	}
+  let LONGEST = WORDS[0];
 
-	return LONGEST
+  for (let WORD of WORDS) {
+    if (WORD.length > LONGEST.length) {
+      LONGEST = WORD;
+    }
+  }
+
+  return LONGEST;
 }
-
-
 
 /*
 test cases:
@@ -57,6 +55,21 @@ longestInList(["the", "quick", "brown", "fox"]) should be "quick"
 longestInList(["hello", "hi", "greetings", "hey"]) should be "greetings"
 */
 
-console.log("longestInList(['England', 'Wales', 'Scotland', 'Northern Ireland']): ", longestInList(['England', 'Wales', 'Scotland', 'Northern Ireland']), "should be", "Northern Ireland")
-console.log('longestInList(["the", "quick", "brown", "fox"]): ', longestInList(["the", "quick", "brown", "fox"]), "should be", "quick")
-console.log("longestInList(['hello', 'hi', 'greetings', 'hey']): ", longestInList(['hello', 'hi', 'greetings', 'hey']), "should be", "greetings")
+console.log(
+  "longestInList(['England', 'Wales', 'Scotland', 'Northern Ireland']): ",
+  longestInList(["England", "Wales", "Scotland", "Northern Ireland"]),
+  "should be",
+  "Northern Ireland"
+);
+console.log(
+  'longestInList(["the", "quick", "brown", "fox"]): ',
+  longestInList(["the", "quick", "brown", "fox"]),
+  "should be",
+  "quick"
+);
+console.log(
+  "longestInList(['hello', 'hi', 'greetings', 'hey']): ",
+  longestInList(["hello", "hi", "greetings", "hey"]),
+  "should be",
+  "greetings"
+);

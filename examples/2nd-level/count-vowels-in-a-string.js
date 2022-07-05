@@ -34,11 +34,19 @@ function isAVowel(character) {
 
 // test cases
 console.log('countVowels("hello"):', countVowels("hello"), "should be 2");
-console.log('countVowels("telephone"):', countVowels("telephone"), "should be 4");
+console.log(
+  'countVowels("telephone"):',
+  countVowels("telephone"),
+  "should be 4"
+);
 console.log('countVowels("rhythm"):', countVowels("rhythm"), "should be 0");
 console.log('countVowels("aeiou"):', countVowels("aeiou"), "should be 5");
 console.log('countVowels("aeiouu"):', countVowels("aeiouu"), "should be 6");
-console.log('countVowels("qaeiouxyz"):', countVowels("qaeiouxyz"), "should be 6");
+console.log(
+  'countVowels("qaeiouxyz"):',
+  countVowels("qaeiouxyz"),
+  "should be 6"
+);
 
 console.log('isAVowel("a"):', isAVowel("a"), "should be true");
 console.log('isAVowel("b"):', isAVowel("b"), "should be false");

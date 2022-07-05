@@ -23,17 +23,17 @@ else
 */
 
 /**
- * 
+ *
  * @param {number} NUM_ONE - first number
  * @param {number} NUM_TWO - second number
  * @returns {boolean} - boolean of whether they are equal
  */
 function isEqual(NUM_ONE, NUM_TWO) {
-    if (NUM_ONE == NUM_TWO) {
-        return true
-    } else {
-        return false
-    }
+  if (NUM_ONE == NUM_TWO) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /*
@@ -46,8 +46,8 @@ isEqual(4, -4) should be False
 isEqual(0, 1) should be False
 */
 
-console.log('isEqual(4, 4): ', isEqual(4, 4), 'should be', true)
-console.log('isEqual(0, 0): ', isEqual(0, 0), 'should be', true)
-console.log('isEqual(-4, -4): ', isEqual(-4, -4), 'should be', true)
-console.log('isEqual(4, -4): ', isEqual(4, -4), 'should be', false)
-console.log('isEqual(0, 1): ', isEqual(0, 1), 'should be', false)
+console.log("isEqual(4, 4): ", isEqual(4, 4), "should be", true);
+console.log("isEqual(0, 0): ", isEqual(0, 0), "should be", true);
+console.log("isEqual(-4, -4): ", isEqual(-4, -4), "should be", true);
+console.log("isEqual(4, -4): ", isEqual(4, -4), "should be", false);
+console.log("isEqual(0, 1): ", isEqual(0, 1), "should be", false);

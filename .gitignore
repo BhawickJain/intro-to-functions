@@ -1,1 +1,4 @@
 .DS_Store
+*core*
+node_modules/
+*.lock

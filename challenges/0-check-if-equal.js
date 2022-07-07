@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Write a function that, given two numbers, returns a boolean representing whether or not the two numbers are equal.
 

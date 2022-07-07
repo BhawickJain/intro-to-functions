@@ -75,3 +75,5 @@ console.log(
   "should be",
   "greetings"
 );
+
+module.exports = longestInList;

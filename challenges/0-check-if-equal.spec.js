@@ -1,10 +1,22 @@
-const isEqual = require('./0-check-if-equal')
+const isEqual = require("./0-check-if-equal");
 
-test("isEqual finds the longest string in an array", () => {
-  expect(isEqual(["it", "is", "a", "nice", "day"])).toBe("nice");
-  expect(isEqual(["why", "hello", "to", "you"])).toBe("hello");
+/*
+test cases:
+===========
+isEqual(4, 4) should be True
+isEqual(0, 0) should be True
+isEqual(-4, -4) should be True
+isEqual(4, -4) should be False
+isEqual(0, 1) should be False
+*/
+
+test("isEqual returns true for input values that are equal", () => {
+  expect(isEqual(0, 0)).toBe(true);
+  expect(isEqual(4, 4)).toBe(true);
 });
 
-test("isEqual returns the earlier string in cases of joint longest strings", () => {
-  expect(isEqual(["brave", "dance"])).toBe("brave");
+test("isEqual returns true for input values that not equal", () => {
+  expect(isEqual(-4, -4)).toBe(true);
+  expect(isEqual(4, -4)).toBe(false);
+  expect(isEqual(0, 1)).toBe(false);
 });

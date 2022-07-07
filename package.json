@@ -4,12 +4,14 @@
   "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
     "eslint": "^8.19.0",
+    "jest": "^28.1.2",
     "prettier": "2.7.1"
   },
   "scripts": {
     "lint": "yarn eslint challenges/ examples/",
     "format": "yarn prettier --write challenges/ examples/",
     "format:check": "yarn prettier --check challenges/ examples/",
-    "...":"yarn lint && yarn format"
+    "test":"yarn jest",
+    "...": "yarn lint && yarn format && yarn test"
   }
 }

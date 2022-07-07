@@ -54,7 +54,7 @@ function censorMessage(MESSAGE, BAN_LIST) {
     if (BAN_LIST.includes(LOWERCASE_WORD)) {
       SCRUBBED_WORDS.push("******");
     } else {
-      SCRUBBED_WORDS.push(LOWERCASE_WORD);
+      SCRUBBED_WORDS.push(WORD);
     }
   }
 

@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 Write a function that, given a list of strings, returns the string which has the greatest character count (including duplicates).
 
